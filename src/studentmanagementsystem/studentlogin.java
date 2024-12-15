@@ -27,17 +27,19 @@ public class studentlogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        id = new javax.swing.JLabel();
+        mainpanel = new javax.swing.JPanel();
+        text2 = new javax.swing.JLabel();
         ipID = new javax.swing.JTextField();
-        join = new javax.swing.JButton();
+        joinbutton = new javax.swing.JButton();
+        cancelbutton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Student login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(51, 0, 153))); // NOI18N
-        jPanel1.setForeground(new java.awt.Color(51, 51, 51));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Student login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(51, 0, 153))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(51, 51, 51));
 
-        id.setText("Enter your ID");
+        text2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        text2.setText("Enter your ID :");
 
         ipID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,81 +47,100 @@ public class studentlogin extends javax.swing.JFrame {
             }
         });
 
-        join.setText("Join");
-        join.addMouseListener(new java.awt.event.MouseAdapter() {
+        joinbutton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        joinbutton.setText("Join");
+        joinbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                joinMouseClicked(evt);
+                joinbuttonMouseClicked(evt);
             }
         });
-        join.addActionListener(new java.awt.event.ActionListener() {
+        joinbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                joinActionPerformed(evt);
+                joinbuttonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(id)
+        cancelbutton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        cancelbutton.setText("Cancel");
+        cancelbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cancelbuttonMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout mainpanelLayout = new javax.swing.GroupLayout(mainpanel);
+        mainpanel.setLayout(mainpanelLayout);
+        mainpanelLayout.setHorizontalGroup(
+            mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainpanelLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(mainpanelLayout.createSequentialGroup()
+                        .addComponent(text2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ipID, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(join)))
-                .addContainerGap(55, Short.MAX_VALUE))
+                        .addComponent(ipID, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22))
+                    .addGroup(mainpanelLayout.createSequentialGroup()
+                        .addComponent(joinbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(cancelbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59))))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        mainpanelLayout.setVerticalGroup(
+            mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainpanelLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(id)
+                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(text2)
                     .addComponent(ipID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
-                .addComponent(join)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(joinbutton)
+                    .addComponent(cancelbutton))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(mainpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(mainpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jPanel1.getAccessibleContext().setAccessibleName("student login");
+        mainpanel.getAccessibleContext().setAccessibleName("student login");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void joinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_joinActionPerformed
+    private void joinbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_joinbuttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_joinActionPerformed
+    }//GEN-LAST:event_joinbuttonActionPerformed
 
-    private void joinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_joinMouseClicked
+    private void joinbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_joinbuttonMouseClicked
         // TODO add your handling code here:
         new studentprofile();
         this.dispose();
-    }//GEN-LAST:event_joinMouseClicked
+    }//GEN-LAST:event_joinbuttonMouseClicked
 
     private void ipIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipIDActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ipIDActionPerformed
+
+    private void cancelbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelbuttonMouseClicked
+        // TODO add your handling code here:
+        new AppStart();
+        this.dispose();
+    }//GEN-LAST:event_cancelbuttonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -160,9 +181,10 @@ public class studentlogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel id;
+    private javax.swing.JButton cancelbutton;
     private javax.swing.JTextField ipID;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton join;
+    private javax.swing.JButton joinbutton;
+    private javax.swing.JPanel mainpanel;
+    private javax.swing.JLabel text2;
     // End of variables declaration//GEN-END:variables
 }

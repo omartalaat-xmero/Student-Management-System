@@ -29,16 +29,16 @@ public class MainSystem {
         
         
        /******************************student**************************************************/
-        /*studentsystem.addStudent(1203, "omar talaat");
-        studentsystem.addStudent(1204, "talaat");
-        studentsystem.editStudent(1203, "talaat",c,g);
-        g.setGradeValue(100);
-        studentsystem.editStudent(1203, "talaat",c1,g);
-        studentsystem.allStudentCourses(1203);
-        studentsystem.allStudents();
-        studentsystem.removeStudent(1203);
-        studentsystem.allStudents();*/
-        
+       studentsystem.addStudent(1203, "omar talaat");
+       studentsystem.addStudent(1204, "talaat");
+       studentsystem.editStudent(1203, "talaat",c,g);
+       g.setGradeValue(100);
+       studentsystem.editStudent(1203, "talaat",c1,g);
+       studentsystem.allStudentCourses(1203);
+       studentsystem.allStudents();
+       studentsystem.removeStudent(1203);
+       studentsystem.allStudents();
+       
         
         /********************************Instructor****************************************/
         instructorsystem.addInstructor(1, "talaat",Arrays.asList(c1,c2));
